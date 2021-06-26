@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/posterurl"
+                android:scaleType="fitXY"
+                />
+
+                <TextView
+                    android:id="@+id/judultext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/posterurl"
+                    android:text="Judul"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/desctext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/judultext"
+                    android:layout_toRightOf="@id/posterurl"
+                    android:layout_marginLeft="10dp"
+                    android:text="Deskripsi Musik"
+                    android:textColor="#000"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    android:textAlignment="textStart"
+                    android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/editbtn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Edit"
+                android:background="@color/design_default_color_primary"
+                android:textAllCaps="false"
+                android:layout_below="@id/posterurl"
+                android:layout_toRightOf="@id/posterurl"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:text="Hapus"
+                android:background="@color/design_default_color_primary"
+                android:id="@+id/deletebtn"
+                android:layout_below="@id/posterurl"
+                android:layout_toRightOf="@id/editbtn"
+                android:layout_marginLeft="50dp"
+                />
+
+</RelativeLayout>

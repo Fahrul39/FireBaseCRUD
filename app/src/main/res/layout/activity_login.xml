@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:background="@drawable/iconapp"
+            android:layout_marginBottom="80dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Silahkan Login"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="309dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Masukkan Email Anda"
+            android:layout_marginBottom="20dp"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="309dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Masukkan Password Anda"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Password"
+            android:textSize="15dp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/showpass"
+            />
+
+        <Button
+            android:id="@+id/buttonb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#fff"
+            android:background="@color/design_default_color_primary"
+            android:layout_marginTop="20dp"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="446dp" />
+
+
+    </LinearLayout>
+</LinearLayout>
